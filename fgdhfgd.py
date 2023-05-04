@@ -1,8 +1,8 @@
-def a(func):
-    def wrapper(x):
-        print(x + 10)
-    return wrapper
-@a
-def b(x):
-    pass
-b(10)
+class student:
+    print('hi!')
+    def __init__(self, height = 150):
+        self.height = height
+oleg = student()
+print(oleg.height)
+masha = student(height=200)
+print(masha.height)
