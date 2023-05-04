@@ -1,11 +1,12 @@
-def cache(func):
-    d = {}
-    def wrapper(*args):
-        r = func(*args)
-        d[args] = r
-        return r, d
+def a(func):
+    def wrapper(*args, **kwargs):
+        k = func(*args, **kwargs) + 100
+        print(k)
     return wrapper
-@cache
-def func(a, b):
-    return a * b
-print(func(8,4))
+@a
+def f(*args):
+    r = 1
+    for i in args:
+        r = r * i
+    return r
+f(1,2,3,4)
