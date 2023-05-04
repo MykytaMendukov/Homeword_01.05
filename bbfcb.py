@@ -36,7 +36,7 @@ class BankAccount:
         print(self.balance + b)
     def withdraw(self):
         print(self.balance - b)
+b = 0
 bank = BankAccount(10000, 'Oleg')
-bank.()
 bank.deposit()
 
