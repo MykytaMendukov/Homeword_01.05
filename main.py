@@ -23,7 +23,7 @@ def black_hole_name(var_1, *args, var_2=2,**kwargs):
     for ag,val in kwargs.items():
         print(ag,':',val)
     print(var_1,var_2)
-black_hole_name(1,2,3, True, name = "Nick", planet = "Earth", galaxy = "Milky way", age = "bagato")
+black_hole_name(1,6,3, True, name = "Nick", planet = "Earth", galaxy = "Milky way", age = "bagato")
 
 lst = [6,43,4]
 dict = { 'a' : 1, 'b': 2, 'c' : 3}
