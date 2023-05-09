@@ -2,6 +2,7 @@ class School:
     def __init__(self, name, students):
         self.name = name
         self.students = students
+        self.teachers = []
     def admit_student(self, student):
         self.students.append(student)
         print(f'{student.name} був доданий до {self.name}')
@@ -12,6 +13,8 @@ class School:
             print(f'{expelled_student.name} був видалений з {self.name}')
         else:
             print(f'{student.name} не був знацдений в {self.name}') #або {expelled_student.name}
+    def add_teacher(self, teacher):
+        self.teachers.append(teacher)
 class Student:
         def __init__(self, name, grade):
             self.name = name
@@ -51,3 +54,9 @@ print(multiply(8, 4))
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 filtered_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(filtered_numbers)
+
+class Teacher:
+    def __init__(self, name, subjects, classes):
+        self.name = name
+        self.subjects = subjects
+        self.classes = classes
